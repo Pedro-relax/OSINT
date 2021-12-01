@@ -40,7 +40,7 @@ def twi():
     # write dict to csv file for data analysis with Pandas  
     tweets_df = pd.DataFrame(twit_dict)
     tweets_df.to_csv('twitter.csv')
-
+     print("Done creating Twitter CSV file!")
 #twitter button        
 twit=Button(window, text= "Twitter",fg='#00ACEE', bg='#FFFFFF', height=2, width=10,command=twi, font=("Arial",12))
 twit.place(x=125, y=100)
@@ -73,7 +73,7 @@ def re():
     # write dict to csv file for data analysis with Pandas    
     data = pd.DataFrame(data_dict)
     data.to_csv('reddit.csv')
-
+    print("Done creating Reddit CSV file!")
 #reddit button
 red=Button(window, text= "Reddit",fg='red', bg='#808080', height=2, width=10,command=re, font=("Arial",12))
 red.place(x=280, y=100)
