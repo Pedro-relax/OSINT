@@ -40,7 +40,7 @@ def twi():
     # write dict to csv file for data analysis with Pandas  
     tweets_df = pd.DataFrame(twit_dict)
     tweets_df.to_csv('twitter.csv')
-     print("Done creating Twitter CSV file!")
+    print("Done creating Twitter CSV file!")
 #twitter button        
 twit=Button(window, text= "Twitter",fg='#00ACEE', bg='#FFFFFF', height=2, width=10,command=twi, font=("Arial",12))
 twit.place(x=125, y=100)
