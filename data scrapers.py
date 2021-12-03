@@ -41,8 +41,10 @@ def twi():
     tweets_df = pd.DataFrame(twit_dict)
     tweets_df.to_csv('twitter.csv')
     print("Done creating Twitter CSV file!")
-#twitter button        
-twit=Button(window, text= "Twitter",fg='#00ACEE', bg='#FFFFFF', height=2, width=10,command=twi, font=("Arial",12))
+
+#twitter button
+
+twit=Button(window, text="twitter",fg='#00ACEE', bg='#FFFFFF', height=2, width=10,command=twi, font=("Arial",12))
 twit.place(x=125, y=100)
 
 #function for button for reddit
@@ -79,7 +81,7 @@ red=Button(window, text= "Reddit",fg='red', bg='#808080', height=2, width=10,com
 red.place(x=280, y=100)
 
 #Display for the GUI and its designs
-window.configure(bg='#FFFFFF')
+window.configure(bg='#FFC0CB')
 window.title('Data Scrapper')
 window.resizable(0,0)
 window.geometry("500x250")
